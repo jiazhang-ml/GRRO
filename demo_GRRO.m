@@ -1,4 +1,7 @@
-% This is an example file on how the GRRO program could be used.
+% This is an example file on how the GRRO program [1] could be used.
+
+% J. Zhang, Y. Lin, M. Jiang, S. Li, Y. Tang, K. C. Tan:
+% Multi-label feature selection via global relevance and redundancy optimization. In *IJCAI*, Yokohama, Japan, 2020.
 
 % Please feel free to contact me (zhangjia_gl@163.com), if you have any problem about this program.
 clear;clc; addpath(genpath('.\'))
@@ -7,7 +10,7 @@ load Bibtex_data
 
 para.alpha=100; para.beta=0.1;
 
-numB=2; [train_data train_target]=trans(train_data,train_target,numB); % ÀëÉ¢»¯
+numB=2; [train_data train_target]=trans(train_data,train_target,numB); % Ã€Ã«Ã‰Â¢Â»Â¯
 
 [~,num_feature] = size(train_data); [~,num_label] = size(train_target);
 
